@@ -19,7 +19,7 @@ export const InjectDataSource: (
   dataSource?: DataSource | DataSourceOptions | string,
 ) => Inject(getDataSourceToken(dataSource));
 
-/** @deprecated */
+/** @deprecated Use InjectDataSource instead. */
 export const InjectConnection = InjectDataSource;
 
 export const InjectEntityManager: (
